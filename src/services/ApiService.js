@@ -33,5 +33,6 @@ export default {
   },
   getUser(id) {
     return apiService.get('/user/' + id)
-  }
+  },
+  apiService
 }

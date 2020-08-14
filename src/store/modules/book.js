@@ -34,7 +34,7 @@ export const actions = {
       commit('SET_BOOK', book)
       return book
     } else {
-      return ApiService.getBook(id).then(response => {
+      return apiService.getBook(id).then(response => {
         commit('SET_BOOK', response.data)
         return response.data
       })

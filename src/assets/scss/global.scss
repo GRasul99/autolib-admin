@@ -13,6 +13,7 @@
 html,
 body {
   font-size: 10px;
+  background-color: $background-color;
 }
 
 section,
@@ -45,6 +46,16 @@ a {
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
+.form-content-input {
+  display: flex;
+}
+
+input {
+  margin-top: 2rem;
+  width: 40rem;
+  padding: 0.5rem 1rem;
+}
+
 .app-bar {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -63,5 +74,28 @@ a {
     &__register {
       margin-left: 2rem;
     }
+  }
+}
+
+.login {
+  display: grid;
+  margin-top: 2rem;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.form {
+  background-color: $primary-color;
+  padding: 2rem;
+  &-header {
+    // border: 1px solid #1fe70e;
+    margin-bottom: 2rem;
+  }
+  &-content {
+    // border: 1px solid #1fe70e;
+    margin-bottom: 2rem;
+  }
+  &-buttons {
+    // border: 1px solid #1fe70e;
   }
 }

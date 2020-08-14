@@ -28,7 +28,7 @@ export default {
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(31, 29, 29, 0.8);
   font-size: 1rem;
   font-weight: 600;
   margin-top: 0;
@@ -41,5 +41,6 @@ export default {
   stroke-linejoin: round;
   fill: none;
   margin-right: 6px;
+  margin-top: 1.5rem;
 }
 </style>

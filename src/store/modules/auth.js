@@ -1,6 +1,6 @@
 import apiService from '@/services/ApiService.js'
 
-export const namespcaed = true
+export const namespaced = true
 
 export const state = {
   authUser: null
