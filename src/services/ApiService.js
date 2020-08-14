@@ -16,11 +16,11 @@ export default {
   register(credentials) {
     return apiService.post('/auth/users/', credentials)
   },
-  getCategories() {
-    return apiService.get('/category/')
+  getBooks() {
+    return apiService.get('/books/')
   },
-  getCategory(id) {
-    return apiService.get('/category/' + id)
+  getBook(id) {
+    return apiService.get('/books/' + id)
   },
   getOrders() {
     return apiService.get('/orders')
