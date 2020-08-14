@@ -4,7 +4,7 @@
       <div class="form-content">
         <div class="form-content-input">
           <BaseIcon name="search" />
-          <BaseInput type="text" placeholder="Логин" v-model="username" />
+          <BaseInput type="text" placeholder="Поиск . . ." v-model="search" />
         </div>
       </div>
     </form>
