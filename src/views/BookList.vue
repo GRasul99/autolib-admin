@@ -9,7 +9,7 @@
       </div>
     </form>
     <div class="book-list">
-      <BookCard v-for="book in book.books" :key="book.id" :book="book" />
+      <BookCard v-for="book in filteredBook" :key="book.id" :book="book" />
     </div>
   </section>
 </template>
@@ -31,7 +31,16 @@ export default {
     this.$store.dispatch('book/fetchBooks')
   },
   computed: {
-    ...mapState(['book', 'books'])
+    ...mapState(['book', 'books']),
+    filteredBook() {
+      return this.book.books.filter(data => {
+        let author = data.author.toLowerCase().match(this.search.toLowerCase())
+        let book_name = data.title
+          .toLowerCase()
+          .match(this.search.toLowerCase())
+        return author || book_name
+      })
+    }
   }
 }
 </script>
