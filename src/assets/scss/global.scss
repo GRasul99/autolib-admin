@@ -8,12 +8,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
+  color: $text-color;
 }
 
 html,
 body {
   font-size: 10px;
   background-color: $background-color;
+}
+
+ul,
+li,
+ol {
+  display: block;
+  list-style: none;
 }
 
 section,
@@ -39,7 +47,7 @@ img {
 
 a {
   text-decoration: none;
-  color: $link-color;
+  color: $text-color;
 }
 
 .-shadow {
@@ -74,6 +82,23 @@ input {
     font-size: 2rem;
     &__register {
       margin-left: 2rem;
+    }
+  }
+}
+
+.nav {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: $primary-color;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem 0;
+    &-link {
+      margin-right: 0.5rem;
+      text-align: center;
     }
   }
 }
