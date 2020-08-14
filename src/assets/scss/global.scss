@@ -48,12 +48,13 @@ a {
 
 .form-content-input {
   display: flex;
+  align-items: center;
 }
 
 input {
   margin-top: 2rem;
   width: 40rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 .app-bar {
@@ -97,5 +98,23 @@ input {
   }
   &-buttons {
     // border: 1px solid #1fe70e;
+  }
+}
+
+.home {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.form-search {
+  input {
+    margin-top: 0;
+    margin-right: 1em;
+  }
+  .form-content-input {
+    .icon {
+      margin-top: 0;
+    }
   }
 }
