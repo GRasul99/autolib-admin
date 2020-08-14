@@ -1,11 +1,12 @@
 <template>
   <div id="app">
+    <TheAppBar />
     <router-view />
   </div>
 </template>
 
 <script>
-import TheAppNav from '@/components/TheAppNav.vue'
+import TheAppBar from '@/components/TheAppBar.vue'
 export default {
   components: {
     TheAppBar
@@ -14,4 +15,5 @@ export default {
 </script>  
 
 <style lang="scss">
+@import '@/assets/scss/global.scss';
 </style>
