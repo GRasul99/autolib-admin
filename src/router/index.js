@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '@/store'
 import BookList from '../views/BookList.vue'
 import BookShow from '../views/BookShow.vue'
 import Statistics from '../views/Statistics.vue'
@@ -20,7 +21,13 @@ const routes = [
     path: '/book-show/:id',
     name: 'book-show',
     component: BookShow,
-    props: true
+    props: true,
+    beforeEnter(routeTo, routeFrom, next) {
+      store.dispatch('book/fetchBook', routeTo.params.id).then(book => {
+        routeTo.params.book = book
+        next()
+      })
+    }
   },
   {
     path: '/statistics',

@@ -1,13 +1,15 @@
 <template>
-  <div class="flip-box">
-    <div class="flip-box-front">
-      <img src="https://s25.postimg.cc/frbd9towf/cta-2.png" alt="Book" />
+  <router-link :to="{ name: 'book-show', params: { id: book.id } }">
+    <div class="flip-box">
+      <div class="flip-box-front">
+        <img src="https://s25.postimg.cc/frbd9towf/cta-2.png" alt="Book" />
+      </div>
+      <div class="flip-box-back" style="background-color: white;">
+        <h3>Название книги: {{ book.title }}</h3>
+        <h3>Автор: {{ book.author }}</h3>
+      </div>
     </div>
-    <div class="flip-box-back" style="background-color: white;">
-      <h3>Название книги: {{ book.title }}</h3>
-      <h3>Автор: {{ book.author }}</h3>
-    </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

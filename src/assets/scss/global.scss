@@ -155,6 +155,12 @@ input {
   grid-gap: 2rem;
 }
 
+.book-show {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
 .orders {
   font-size: 1.5rem;
 }
@@ -176,7 +182,6 @@ thead {
     margin-right: 1rem;
   }
 }
-
 
 .statistics {
   font-size: 1.8rem;

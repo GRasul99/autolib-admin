@@ -1,10 +1,15 @@
 <template>
-  <section class="section book-show"></section>
+  <section class="section book-show -shadow">Book Show {{ book.id }}</section>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'BookShow',
+  props: {
+    book: {
+      type: Object,
+      required: true
+    }
+  }
+}
 </script>
-
-<style lang="scss" scoped>
-</style>
