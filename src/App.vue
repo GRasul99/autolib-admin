@@ -2,7 +2,7 @@
   <div id="app">
     <TheAppBar />
     <TheNavBar v-if="user" />
-    <router-view />
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 
@@ -20,8 +20,8 @@ export default {
     }
   }
 }
-</script>  
+</script>
 
 <style lang="scss">
-@import '@/assets/scss/global.scss';
+@import '@/assets/scss/global';
 </style>

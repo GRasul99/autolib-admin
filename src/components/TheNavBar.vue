@@ -17,7 +17,7 @@
         >
       </li>
       <li class="nav-menu-link">
-        <router-link class="nav-menu-link__item" to="/Retrieved-boks"
+        <router-link class="nav-menu-link__item" to="/retrieved-books"
           >Сданные книги</router-link
         >
       </li>

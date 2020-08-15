@@ -1,5 +1,7 @@
 <template>
-  <section class="section"></section>
+  <section class="section statistics">
+    Statistics
+  </section>
 </template>
 
 <script>
@@ -8,4 +10,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.statistics {
+  font-size: 1.5rem;
+}
+</style>
