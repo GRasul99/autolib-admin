@@ -66,14 +66,12 @@ input {
 }
 
 .app-bar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 1rem 15px;
+
   &__img {
     width: 10rem;
     height: 8rem;
@@ -128,19 +126,23 @@ input {
 
 .form-search {
   width: 50rem;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   padding: 0 0 0 2rem;
 }
 
 .home {
   font-size: 1.8rem;
 }
+
 .book-list {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
   grid-gap: 2rem;
+}
+
+.orders {
+  font-size: 1.5rem;
 }
 
 table,
@@ -150,7 +152,6 @@ table,
   overflow-x: auto;
   white-space: nowrap;
   background-color: $primary-color;
-  font-size: 1.5rem;
 }
 
 thead {
