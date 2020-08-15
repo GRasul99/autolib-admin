@@ -31,7 +31,7 @@ export default {
     this.$store.dispatch('book/fetchBooks')
   },
   computed: {
-    ...mapState(['book', 'books']),
+    ...mapState(['books', 'book']),
     filteredBook() {
       return this.book.books.filter(data => {
         let author = data.author.toLowerCase().match(this.search.toLowerCase())
@@ -45,5 +45,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

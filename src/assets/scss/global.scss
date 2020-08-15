@@ -142,3 +142,22 @@ input {
   grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
   grid-gap: 2rem;
 }
+
+table,
+.table {
+  margin-top: 2rem;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: $primary-color;
+  font-size: 1.5rem;
+}
+
+thead {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  th {
+    margin-right: 1rem;
+  }
+}
