@@ -1,5 +1,5 @@
 <template>
-  <section class="section statistics">
+  <section class="section statistics -shadow">
     Statistics
   </section>
 </template>
@@ -9,9 +9,3 @@ export default {
   name: 'Statistics'
 }
 </script>
-
-<style lang="scss" scoped>
-.statistics {
-  font-size: 1.5rem;
-}
-</style>

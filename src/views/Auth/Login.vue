@@ -5,6 +5,7 @@
         <div class="form-header">
           Вход
         </div>
+        <hr />
         <div class="form-content">
           <div class="form-content-input">
             <BaseIcon name="user" />
