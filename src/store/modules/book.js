@@ -28,6 +28,10 @@ export const actions = {
       })
   },
   fetchBook({ commit, getters }, id) {
+    if (id === state.book.id) {
+      return state.book
+    }
+
     let book = getters.getBookById(id)
 
     if (book) {
